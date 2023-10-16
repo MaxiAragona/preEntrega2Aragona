@@ -42,7 +42,7 @@ const ponerLindoLosVehiculos = (vehiculos) => {
 };
 
 const pedirTipo = () => {
-  let tipo = -1; 
+  let tipo = -1;
 
   while (tipo !== 0 && tipo !== 1 && tipo !== 2) {
     tipo = Number(prompt("¿Qué tipo de vehículo buscas? [1-autos / 2-motos / 0-salir]"));
@@ -52,7 +52,7 @@ const pedirTipo = () => {
   }
 
   return tipo;
-}; 
+};
 
 const elegirVehiculo = (tipoVehiculo) => {
   if (tipoVehiculo === 0) {
