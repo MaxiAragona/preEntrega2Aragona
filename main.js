@@ -59,7 +59,7 @@ const elegirVehiculo = (tipoVehiculo) => {
     return;
   } else {
     const filteredVehiculos = vehiculos.filter((vehiculo) => vehiculo.tipo === tipoVehiculo);
-    const mensaje = `Elige un auto para mostrar su precio. [0-salir]\n\n${ponerLindoLosVehiculos(filteredVehiculos)}`;
+    const mensaje = `Elige un numero ID para mostrar su precio. [0-salir]\n\n${ponerLindoLosVehiculos(filteredVehiculos)}`;
     return Number(prompt(mensaje));
   }
 };
